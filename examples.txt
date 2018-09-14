@@ -1,0 +1,43 @@
+POST /oauth/token HTTP/1.1
+Host: api.dpdough.com
+Content-Type: application/json
+Cookie: AWSELB=3549F5A51AA4299EFCC8D7EAE1BD10BE56532FDE04D22AA5E22AEC529AC79BE93D6E9AA45C2849E3E553DFF7680914575BB60F3DE2B0A73B995211D5B9A6E79D37A077034E
+User-Agent: calzonerun/26 CFNetwork/974.2.1 Darwin/18.0.0
+Connection: close
+Accept: */*
+Accept-Language: en-us
+Content-Length: 151
+X-Unity-Version: 2018.1.7f1
+
+{"client_id":2,"grant_type":"password","client_secret":"5IFUoqLi0GaiYKxnPB3T1WTSl91AmWziS2KFKoHf","username":"cpc1007@rit.edu","password":"Con162ess$"}
+
+
+
+PUT /api/game/points HTTP/1.1
+Host: api.dpdough.com
+Content-Type: application/json
+Cookie: AWSELB=3549F5A51AA4299EFCC8D7EAE1BD10BE56532FDE04D22AA5E22AEC529AC79BE93D6E9AA45C2849E3E553DFF7680914575BB60F3DE2B0A73B995211D5B9A6E79D37A077034E
+User-Agent: calzonerun/26 CFNetwork/974.2.1 Darwin/18.0.0
+Connection: close
+Accept: */*
+Accept-Language: en-us
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImMxNDZiMGMxNTJmNGE5NjMwZGE1YWI2ZjBiY2EyNzEyNTRlYzMwYjhjOGExMzc2NzIxNmRjYWE0MzE3YjI5ODhhMTc3ZDg0NTg5ZDdlMzM3In0.eyJhdWQiOiIyIiwianRpIjoiYzE0NmIwYzE1MmY0YTk2MzBkYTVhYjZmMGJjYTI3MTI1NGVjMzBiOGM4YTEzNzY3MjE2ZGNhYTQzMTdiMjk4OGExNzdkODQ1ODlkN2UzMzciLCJpYXQiOjE1MzY4OTI3MjksIm5iZiI6MTUzNjg5MjcyOSwiZXhwIjoxNTY4NDI4NzI5LCJzdWIiOiIxMzE3MjciLCJzY29wZXMiOltdfQ.Ak2dlgz0aBL4pg6z7jBLw-mn2mWZsYhLH-GDDaPIiDbp-wR9AYDTN5rGu0-6yPxIprxIjfWcZCkCAS1zRLparmbGF5hqSZpldO8SWy6z01riOXtsYtLZah3SK9ikdJS_vkj7C1DSExMs7qR4q1xGdfF-bmj145WtH_qRfU55_VxmPIa6HupOefT0QN2iEtsoyUu964sKSm8lpuHOR-NjzgMNMGSe-3QuHf0yIK-NrGzAL8ujeM4sG_wLRQ6IpQlsmQ9uzpxjD399a0zzEqR1b1z6SjJm45JgG5o3FQhZBn5TLCCPSfQ16KHc8IjjgG7tGAEbOBxGds3lUHd7JbGrsTnxwDVnrIP5Lhs9-pE61yP0tRZIGhqB8g4JMI6fc_nE7_v4oS_iER7kcei9ZFa9ZR0NEfvyjZ3RhXOK1NFmDxbBGa7a2cWPApuKxndKnVegp-QFvUCsLz9oVv2xkcjLhBWgL4hYCT30_qwoel57eUvP0_e5s9YObg4f6ISHE0Nv9OIo0SXN9XP0QoOTIjE41HkXAegpoCPM2wCF5V5ga-Vw7QEW1m9b95DeQ3TExhilGmsN_jhQD31nBh1h1a1K0cOcdyqliFEWHNJrisYlD7dUd_XsuADqLmOS4yS1by_ah9epe1SLi3N-pySG1y2O_QxWT7--uM8i5zLbCi0xwsg
+Content-Length: 42
+X-Unity-Version: 2018.1.7f1
+
+{"customer_id":131727,"game_points":15000}
+
+
+GET /api/game/settings HTTP/1.1
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Cache-Control: no-cache, private
+Content-Type: application/json
+Date: Fri, 14 Sep 2018 02:38:50 GMT
+Server: nginx/1.10.3 (Ubuntu)
+Content-Length: 79
+Connection: Close
+
+{"points_per_dpheart":3750,"min_hours_frequency":24,"max_hearts_per_period":10}
